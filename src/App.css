@@ -1,0 +1,116 @@
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 330px;
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
+.card-header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.card-footer {
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), transparent);
+}
+
+.card-ribbon {
+  position: absolute;
+  bottom: 0;
+  right: -6.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #53ff53;
+  height: 3rem;
+  width: 16rem;
+  transform: rotate(-45deg);
+  padding: .25rem;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+.episode {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: orange;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  color: #000000;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.stats {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: end;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* @Buttons */
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--color);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  border-radius: .25rem;
+  line-height: 1;
+  height: 2.5rem;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  font-weight: bold;
+  font-size: .8rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.button:not(:disabled):active {
+  filter:contrast(.9);
+}
+
+.icon-button {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(200, 200, 200, .5);
+  border-radius: 50%;
+}
+
+.icon-button svg {
+  flex-shrink: 0;
+}

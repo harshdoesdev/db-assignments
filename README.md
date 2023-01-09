@@ -1,2 +1,0 @@
-# db-assignments
-Assignments
